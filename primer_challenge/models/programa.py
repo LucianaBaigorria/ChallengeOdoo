@@ -11,7 +11,7 @@ class Programa(models.Model):
 @api.model
 def get_alumnos_inscritos(self):
     alumnos = []
-    inscripciones = self.env['mi_modulo.inscripcion'].search([('programa_id', '=', self.id)])
+    inscripciones = self.env['inscripcion'].search([('programa_id', '=', self.id)])
     for inscripcion in inscripciones:
         alumno_data = {
             'nombre': inscripcion.alumno.nombre,
