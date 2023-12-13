@@ -20,12 +20,11 @@ Pycharm Community: como IDE- <br>
 
 <h2>  Descripcion del proyecto  </h2>
 
-El proyecto "Cosmic Comic" es una tienda en línea de productos de belleza que ofrece una variedad de artículos como acondicionadores, bases y sombras, shampoo, labiales, cremas faciales y perfumes. Desarrollado con tecnologías web modernas, el proyecto utiliza HTML, CSS, JavaScript y Node.js para proporcionar una experiencia de usuario interactiva y atractiva.
+Se creo un modulo que contiene tres modelos:
+	- Modelo Alumno que contiene los datos: Nombre, Apellido, Fecha de nacimiento, Nro de legajo, Email, Teléfono, Dirección, País
+	- Modelo Programa que contiene nombre y descripción
+	- Modelo Inscripción que permite registrar a un alumno está inscripto a un programa
+	
 
 
-<h3>Catálogo de Productos:</h3> Presenta una amplia gama de productos de belleza con imágenes atractivas y descripciones detalladas.
-<h3>Proceso de Inicio de Sesión<h3> Los usuarios pueden acceder a sus cuentas utilizando un formulario de inicio de sesión intuitivo.Se implementan medidas de seguridad, como encriptación de contraseñas, para proteger la información de los usuarios.
-<h3>Carrito de Compras:</h3> Los usuarios pueden agregar productos a su carrito de compras, visualizar la cantidad de productos en tiempo real y ver un resumen detallado de su carrito.
-<h3>Navegación Intuitiva:</h3> La interfaz de usuario incluye una barra de navegación que permite a los usuarios iniciar sesión fácilmente para gestionar sus compras.
-<h3>Proceso de Pago:</h3> La integración con MercadoPago facilita a los usuarios realizar transacciones seguras y rápidas.
-<h3>Diseño Responsivo:</h3> La aplicación está diseñada con Bootstrap para garantizar una experiencia consistente en dispositivos de diferentes tamaños.
+
