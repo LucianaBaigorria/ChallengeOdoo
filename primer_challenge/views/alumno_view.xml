@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding='utf-8' ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="alumno_form_view">
+            <field name="name">alumno_form_view</field>
+            <field name="model">alumno</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <field name="nombre"/>
+                        <field name="apellido"/>
+                        <field name="fecha_nacimiento"/>
+                        <field name="nro_legajo"/>
+                        <field name="email"/>
+                        <field name="telefono"/>
+                        <field name="direccion"/>
+                        <field name="pais"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

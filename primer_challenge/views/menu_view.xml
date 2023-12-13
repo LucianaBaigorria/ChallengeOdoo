@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Acción del view del alumno -->
+        <record id="alumno_action" model="ir.actions.act_window">
+        <field name="name">Alumno</field>
+        <field name="res_model">alumno</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+        <!-- Acción del view de la inscripcion -->
+        <record id="inscripcion_action" model="ir.actions.act_window">
+        <field name="name">Inscripcion</field>
+        <field name="res_model">inscripcion</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+        <!-- Acción del view del programa -->
+        <record id="programa_action" model="ir.actions.act_window">
+        <field name="name">Programa</field>
+        <field name="res_model">programa</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <!-- Menú "Mi Listado" -->
+    <menuitem id="listado_menu" name="Mi Listado" sequence="10"/>
+
+     <!-- Submenú "Alumno" dentro de "Mi Listado" -->
+    <menuitem id="alumno_menu" parent="listado_menu" name="Alumno" action="alumno_action" sequence="5"/>
+    <menuitem id="inscripcion_menu" parent="listado_menu" name="Inscripcion" action="inscripcion_action" sequence="5"/>
+    <menuitem id="programa_menu" parent="listado_menu" name="Programa" action="programa_action" sequence="5"/>
+    </data>
+
+
+</odoo>

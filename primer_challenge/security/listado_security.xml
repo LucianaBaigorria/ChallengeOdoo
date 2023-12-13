@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Crear la categoría del módulo -->
+        <record id="categoria_modulo_listado" model="ir.module.category">
+            <field name="name">Listado</field>
+        </record>
+
+        <!-- Crear el grupo de usuarios -->
+        <!-- Acceso al modelo Alumno -->
+        <record id="listado_group_user" model="res.groups">
+            <field name="name">Usuario</field>
+            <field name="category_id" ref="categoria_modulo_listado"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <!-- Acceso al modelo Inscripcion -->
+        <record id="inscripcion_group_user" model="res.groups">
+            <field name="name">Usuario1</field>
+            <field name="category_id" ref="categoria_modulo_listado"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+         <!-- Acceso al modelo Programa -->
+        <record id="programa_group_user" model="res.groups">
+            <field name="name">Usuario2</field>
+            <field name="category_id" ref="categoria_modulo_listado"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+    </data>
+</odoo>
